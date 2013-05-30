@@ -8,7 +8,7 @@
   (require 'php-mode)
   (require 'php+-mode)
   (php+-mode-setup)
-  
+
   (require 'multi-web-mode)
   (setq mweb-default-major-mode 'html-mode)
   (setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
@@ -44,7 +44,7 @@
  '(php+-mode-php-compile-on-save t)
  '(php+-mode-show-project-in-modeline t)
  '(php+-mode-show-trailing-whitespace t)
- '(php-doc-default-author (quote ("Vegard Stene" . "vegstene@vg.no")))
+ '(php-doc-default-author (quote ("Vegard Stene" . "vegard.stene@vg.no")))
  '(php-file-patterns (quote ("\\.php[s345t]?\\'" "\\.inc\\'")))
  '(php-html-basic-offset 4)
  '(phpcs-standard "VG"))
