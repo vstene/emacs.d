@@ -1,4 +1,4 @@
-(setq package-list '(php-mode php+-mode multi-web-mode flymake-php twilight-theme
+(setq package-list '(php-mode js2-mode multi-web-mode flymake-php twilight-theme
                               switch-window smex flycheck undo-tree))
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")

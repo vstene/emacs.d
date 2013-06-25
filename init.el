@@ -4,6 +4,7 @@
 
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path "~/.emacs.d/vendor/")
+(add-to-list 'load-path "~/.emacs.d/vendor/phpplus-mode")
 
 ;; Setup ELPA packages
 (require 'setup-packages)
@@ -31,6 +32,9 @@
 
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
+
+;; Fix delete button
+(normal-erase-is-backspace-mode 1)
 
 ;; enable column-number-mode
 (column-number-mode t)
@@ -126,7 +130,7 @@
                                    (smex-major-mode-commands)))
 
 (defadvice smex (around space-inserts-hyphen activate compile)
-  (let ((ido-cannot-complete-command 
+  (let ((ido-cannot-complete-command
          `(lambda ()
             (interactive)
             (if (string= " " (this-command-keys))
@@ -137,7 +141,7 @@
 ;; switch-window
 (require 'switch-window)
 
-;; (winner-mode 1)
+(winner-mode 1)
 
 ;; Other config files
 (require 'misc-func)
