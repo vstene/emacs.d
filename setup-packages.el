@@ -1,5 +1,5 @@
 (setq package-list '(php-mode js2-mode multi-web-mode flymake-php twilight-theme
-                              switch-window smex flycheck undo-tree))
+                              switch-window smex flycheck undo-tree scss-mode ))
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages")

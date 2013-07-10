@@ -54,6 +54,9 @@
 (set-default 'indicate-empty-lines t)
 (set-default 'imenu-auto-rescan t)
 
+;; scss mode
+(set-default 'scss-compile-at-save nil)
+
 ;; Uniquify
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
